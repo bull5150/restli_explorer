@@ -6,5 +6,7 @@ I built this repo with VS Code and the  Gradle Language Support Extension.  This
 You will need:
 
 -Gradle
+
 -Java
--VS Code is preferred or and IDE of your choosing
+
+-VS Code is preferred or an IDE of your choosing
