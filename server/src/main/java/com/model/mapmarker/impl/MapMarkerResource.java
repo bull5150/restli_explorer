@@ -9,11 +9,11 @@ import java.util.Map;
 public class MapMarkerResource extends CollectionResourceTemplate<Long, MapMarker> {
 
   // In-memory store for the fortunes
-  static Map<Long, String> markers = new HashMap<Long, String, String, String>();
+  static Map<Long, String, String, String> markers = new HashMap<Long, String, String, String>();
   static {
     markers.put(1L, "here", "45.2222", "-45.3333");
-    markers.put(2L, "There's no time like the present.");
-    markers.put(3L, "Don't worry, be happy.");
+    markers.put(2L, "There's no time like the present." "", "");
+    markers.put(3L, "Don't worry, be happy.", "", "");
   }
 
   @Override
