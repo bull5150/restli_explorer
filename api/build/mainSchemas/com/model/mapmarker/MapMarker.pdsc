@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "MapMarker",
+  "namespace": "com.model.mapmarker",
+  "doc": "Generate a Map Marker",
+  "fields": [
+    {
+      "name": "Name",
+      "type": "string",
+      "doc": "Marker Name"
+    },
+    {
+      "name": "Latitude",
+      "type": "string",
+      "doc": "Latitude Postion"
+    },
+    {
+      "name": "Longitude",
+      "type": "string",
+      "doc": "Longitude Postion"
+    }
+  ]
+}

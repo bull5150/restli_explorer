@@ -17,7 +17,7 @@ import com.linkedin.data.template.SetMode;
  * Generate a Map Marker
  * 
  */
-@Generated(value = "com.linkedin.pegasus.generator.JavaCodeUtil", comments = "Rest.li Data Template. Generated from C:\\TDAware\\restli\\api\\src\\main\\pegasus\\com\\model\\mapmarker\\MapMarker.pdsc.", date = "Tue Nov 06 08:23:02 CST 2018")
+@Generated(value = "com.linkedin.pegasus.generator.JavaCodeUtil", comments = "Rest.li Data Template. Generated from C:\\Repos\\restli_explorer\\api\\src\\main\\pegasus\\com\\model\\mapmarker\\MapMarker.pdsc.", date = "Thu Nov 08 09:25:23 CST 2018")
 public class MapMarker
     extends RecordTemplate
 {
