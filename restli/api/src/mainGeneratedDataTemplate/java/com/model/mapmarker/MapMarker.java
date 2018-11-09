@@ -17,16 +17,17 @@ import com.linkedin.data.template.SetMode;
  * Generate a Map Marker
  * 
  */
-@Generated(value = "com.linkedin.pegasus.generator.JavaCodeUtil", comments = "Rest.li Data Template. Generated from C:\\TDAware\\restli_explorer\\restli\\api\\src\\main\\pegasus\\com\\model\\mapmarker\\MapMarker.pdsc.", date = "Fri Nov 09 08:19:41 CST 2018")
+@Generated(value = "com.linkedin.pegasus.generator.JavaCodeUtil", comments = "Rest.li Data Template. Generated from C:\\TDAware\\restli_explorer\\restli\\api\\src\\main\\pegasus\\com\\model\\mapmarker\\MapMarker.pdsc.", date = "Fri Nov 09 13:56:24 CST 2018")
 public class MapMarker
     extends RecordTemplate
 {
 
     private final static MapMarker.Fields _fields = new MapMarker.Fields();
-    private final static RecordDataSchema SCHEMA = ((RecordDataSchema) DataTemplateUtil.parseSchema("{\"type\":\"record\",\"name\":\"MapMarker\",\"namespace\":\"com.model.mapmarker\",\"doc\":\"Generate a Map Marker\",\"fields\":[{\"name\":\"Name\",\"type\":\"string\",\"doc\":\"Marker Name\"},{\"name\":\"Latitude\",\"type\":\"string\",\"doc\":\"Latitude Postion\"},{\"name\":\"Longitude\",\"type\":\"string\",\"doc\":\"Longitude Postion\"}]}"));
+    private final static RecordDataSchema SCHEMA = ((RecordDataSchema) DataTemplateUtil.parseSchema("{\"type\":\"record\",\"name\":\"MapMarker\",\"namespace\":\"com.model.mapmarker\",\"doc\":\"Generate a Map Marker\",\"fields\":[{\"name\":\"Name\",\"type\":\"string\",\"doc\":\"Marker Name\"},{\"name\":\"Latitude\",\"type\":\"string\",\"doc\":\"Latitude Postion\"},{\"name\":\"Longitude\",\"type\":\"string\",\"doc\":\"Longitude Postion\"},{\"name\":\"Icon\",\"type\":\"string\",\"doc\":\"Marker Icon\"}]}"));
     private final static RecordDataSchema.Field FIELD_Name = SCHEMA.getField("Name");
     private final static RecordDataSchema.Field FIELD_Latitude = SCHEMA.getField("Latitude");
     private final static RecordDataSchema.Field FIELD_Longitude = SCHEMA.getField("Longitude");
+    private final static RecordDataSchema.Field FIELD_Icon = SCHEMA.getField("Icon");
 
     public MapMarker() {
         super(new DataMap(), SCHEMA);
@@ -229,6 +230,69 @@ public class MapMarker
         return this;
     }
 
+    /**
+     * Existence checker for Icon
+     * 
+     * @see MapMarker.Fields#Icon
+     */
+    public boolean hasIcon() {
+        return contains(FIELD_Icon);
+    }
+
+    /**
+     * Remover for Icon
+     * 
+     * @see MapMarker.Fields#Icon
+     */
+    public void removeIcon() {
+        remove(FIELD_Icon);
+    }
+
+    /**
+     * Getter for Icon
+     * 
+     * @see MapMarker.Fields#Icon
+     */
+    public String getIcon(GetMode mode) {
+        return obtainDirect(FIELD_Icon, String.class, mode);
+    }
+
+    /**
+     * Getter for Icon
+     * 
+     * @return
+     *     Required field. Could be null for partial record.
+     * @see MapMarker.Fields#Icon
+     */
+    @Nonnull
+    public String getIcon() {
+        return obtainDirect(FIELD_Icon, String.class, GetMode.STRICT);
+    }
+
+    /**
+     * Setter for Icon
+     * 
+     * @see MapMarker.Fields#Icon
+     */
+    public MapMarker setIcon(String value, SetMode mode) {
+        putDirect(FIELD_Icon, String.class, String.class, value, mode);
+        return this;
+    }
+
+    /**
+     * Setter for Icon
+     * 
+     * @param value
+     *     Must not be null. For more control, use setters with mode instead.
+     * @see MapMarker.Fields#Icon
+     */
+    public MapMarker setIcon(
+        @Nonnull
+        String value) {
+        putDirect(FIELD_Icon, String.class, String.class, value, SetMode.DISALLOW_NULL);
+        return this;
+    }
+
     @Override
     public MapMarker clone()
         throws CloneNotSupportedException
@@ -278,6 +342,14 @@ public class MapMarker
          */
         public PathSpec Longitude() {
             return new PathSpec(getPathComponents(), "Longitude");
+        }
+
+        /**
+         * Marker Icon
+         * 
+         */
+        public PathSpec Icon() {
+            return new PathSpec(getPathComponents(), "Icon");
         }
 
     }

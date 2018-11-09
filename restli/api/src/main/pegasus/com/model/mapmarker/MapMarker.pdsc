@@ -23,6 +23,6 @@
       "name": "Icon",
       "type": "string",
       "doc": "Marker Icon"
-    },
+    }
   ]
 }
