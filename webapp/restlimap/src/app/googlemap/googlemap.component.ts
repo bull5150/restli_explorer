@@ -29,9 +29,8 @@ export class GoogleMapComponent implements OnInit {
   }
 
   setMarkers(value: number): void {
-    console.log(value);
     const marker = new google.maps.Marker();
-    this.RestliService.getMarker(1).subscribe(response=>{
+    this.RestliService.getMarker(value).subscribe(response=>{
       marker.setPosition(new google.maps.LatLng(response.latitude, response.longitude));
       marker.setIcon(response.icon);
       marker.setTitle(response.name);
