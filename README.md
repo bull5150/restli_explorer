@@ -26,11 +26,7 @@ Rest Server:
 
 - clone repo
 
-- cd filepath\restli_explorer\restli
-
-- cmd gradle build
-
-- cd server
+- cd filepath\restli_explorer\restli\server
 
 - cmd gradle startMapMarkerServer
 
