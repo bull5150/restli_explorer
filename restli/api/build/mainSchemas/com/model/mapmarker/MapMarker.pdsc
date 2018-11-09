@@ -18,6 +18,11 @@
       "name": "Longitude",
       "type": "string",
       "doc": "Longitude Postion"
+    },
+    {
+      "name": "Icon",
+      "type": "string",
+      "doc": "Marker Icon"
     }
   ]
 }
