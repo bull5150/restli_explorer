@@ -22,15 +22,27 @@ This is what I was running it with:
 
 Rest Server:
 -clone repo
+
 -cd filepath\restli_explorer\restli
+
 -cmd gradle build
+
 -cd server
+
 -cmd gradle startMapMarkerServer
 
-WebApp
+
+WebApp:
+
 -open folder filepath\restli_explorer\webapp\restlimap in VS Code
+
 -in cmd window in VS code run npm install
+
 -run npm start
+
+
+
+
 
 Navigate Chrome browser to Localhost:4200
 
