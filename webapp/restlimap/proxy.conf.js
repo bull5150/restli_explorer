@@ -21,5 +21,6 @@ var proxySettings = {
 };
 module.exports = {
     '/api': proxySettings,
-    '/help': proxySettings
+    '/help': proxySettings,
+    '/getmarker': proxySettings
 }
