@@ -1,0 +1,10 @@
+#mapmenu ul{
+    list-style-type: none;
+    display: inline;
+    font-size: 1.8em;
+}
+#mapmenu li{
+    float:left;
+    margin-right: 5px;
+    color: #fff;
+}
